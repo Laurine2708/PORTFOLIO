@@ -1,0 +1,857 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+h3 {
+  text-align: center;
+}
+
+p {
+  text-align: justify;
+  text-indent: 3em;
+}
+
+.memo {
+  font-size: 10px;
+}
+
+.bienvenue {
+  font-family: Chalkduster, fantasy;
+  font-size: 3em;
+}
+
+.typewriter {
+  white-space: nowrap;
+  border-right: 3px solid #e5e7eb;
+  padding-right: 5px;
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { border-color: transparent; }
+  51%, 100% { border-color: #e5e7eb; }
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Articles veille */
+.article-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin-bottom: 2em;
+}
+
+.article-block {
+  flex: 1;
+  min-width: 250px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.article-block:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.article-block strong {
+  display: block;
+  font-size: 1.1em;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.article-block p {
+  font-size: 0.95em;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.article-block a {
+  text-decoration: none;
+  color: #1e90ff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.article-block a:hover {
+  color: #3742fa;
+}
+
+/* CONTENEUR SISR/SLAM - PARFAITEMENT CENTRÉ */
+.container {
+	display: flex;
+	justify-content: center;   /* centre le groupe SISR+SLAM */
+	align-items: flex-start;
+	gap: 200px;                 /* espace horizontal entre les deux */
+	width: 100%;
+	max-width: 900px;
+	margin: 30px auto 0;
+	padding: 0, 20px;
+}
+
+.container details {
+  flex: 0 0 320px;
+  max-width: 400px;
+  text-align: center;    /* centre le contenu du details */
+  margin: 0;  
+}
+
+select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  margin: 20px auto;
+  display: block;
+  cursor: pointer;
+}
+
+/* Carte projet avec image */
+.case.projet {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  width: 320px;
+  height: 190px;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+/* Effet zoom au hover */
+.projet:hover {
+  transform: scale(1.05);
+}
+
+/* Overlay sombre */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* rend l'image plus claire derrière */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Titre */
+.overlay h3 {
+  color: white;
+  font-size: 16px;
+}
+
+/* Boutons */
+.buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap; /* évite que ça déborde */
+  justify-content: center;
+}
+
+.btn {
+  background-color: white;
+  color: black;
+  padding: 8px 14px;   /* + confortable */
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 14px;     /* un peu plus grand */
+  font-weight: bold;
+  transition: all 0.3s ease;
+  white-space: nowrap; /* évite coupure du texte */
+}
+
+/* Hover bouton */
+.btn:hover {
+  background-color: #4e7282;
+  color: white;
+}
+
+details {
+  position: relative;
+  text-align: left;
+}
+
+summary {
+  all: unset;
+  display: inline-block;
+  background-color: #000000;
+  font-weight: bold;
+  border: solid 0.1em;
+  border-color: #FFFFFF;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 50% 20% / 10% 40%;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  animation: float 3s ease-in-out infinite;
+}
+
+summary:hover {
+  background-color: #FFFFFF;
+  color: black;
+  border-color: #000000;
+  animation-play-state: paused;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+    filter: drop-shadow(0 0 0 rgba(0,0,0,0));
+  }
+  50% {
+    transform: translateY(-8px);
+    filter: drop-shadow(0 8px 4px rgba(0,0,0,0.3));
+  }
+}
+
+.no-animation {
+  animation-play-state: paused !important;
+  animation: none !important;
+}
+
+.encadre {
+  position: relative;
+  background-color: #5d80a3;
+  color: white;
+  border: 1px solid #ccc;
+  border-radius: 50% 20% / 10% 40%;
+  margin-top: 5px;
+  padding: 30px;
+  width: 100%;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Boutons */
+.CV {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  background-color: #000000;
+  border: solid 0.1em;
+  border-color: #FFFFFF;
+  margin-left: 30%;
+  border-radius: 50% 20% / 10% 40%;
+  padding: 10px 30px;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  display: block;
+  border: none;
+  cursor: pointer;
+}
+
+.CV:hover {
+  color: black;
+  background-color: #FFFFFF;
+  border-color: #000000;
+}
+
+.pix {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  background-color: #000000;
+  border: solid 0.1em;
+  border-color: #FFFFFF;
+  margin-left: 10%;
+  border-radius: 50% 20% / 10% 40%;
+  padding: 10px 30px;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  display: block;
+  border: none;
+  cursor: pointer;
+}
+
+.pix:hover {
+  color: black;
+  background-color: #FFFFFF;
+  border-color: #000000;
+}
+
+.nom {
+  font-family: Arial, sans-serif;
+  display: block;
+  font-size: 20px;
+  padding: 10px;
+  color: black;
+  text-align: center;
+  margin-top: -10px;
+}
+
+.titre {
+  font-family: Arial, sans-serif;
+  display: block;
+  font-size: 15px;
+  padding: 15px 20px;
+  color: black;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.titre:hover {
+  color: white;
+  font-size: 15px;
+  transition: background 0.5s;
+}
+
+footer {
+  text-align: center;
+  font-size: 10px;
+  padding: 30px;
+  background-color: #4e7282;
+}
+
+/* IMAGES - TAILLES RAISONNABLES */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.organigramme img {
+  width: 50%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: nowrap;
+}
+
+.logo img {
+  width: auto;
+  height: 70px;
+  max-width: 100%;
+}
+
+/* Structure principale */
+.sidebar {
+  width: 205px;
+  font-size: 25px;
+  background-color: #4e7282;
+  color: black;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.main-content {
+  background-image: url("menu_5_bis.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 205px;
+  padding: 0;
+  flex: 1;
+  display: flex;
+  overflow-y: auto;
+  overflow-x: hidden;
+  flex-direction: column;
+  gap: 0;
+}
+
+.cases-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding: 40px;
+}
+
+.case {
+  background-image: url("menu_2_ter.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(1.2);
+  width: 220px;
+  padding: 20px;
+  height: 150px;
+  color: white;
+  font-weight: bold;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 18px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+}
+
+.case:hover {
+  transform: translateY(-5px);
+}
+
+.doc {
+  text-decoration: none;
+  text-shadow: 4px 4px 2px black;
+}
+
+.theme-box, .theme-box-1, .theme-box-2, .theme-box-3, .theme-box-4, .theme-box-5 {
+  flex: 1;
+  color: white;
+  width: 100%;
+  padding: 40px;
+}
+
+.theme-box {
+  padding: 50px;
+  text-align: center;
+}
+
+.theme-box-1 {
+  text-align: justify;
+}
+
+.theme-box h3 {
+  margin-bottom: 10px;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.theme-box, .theme-box-1, .theme-box-2, .theme-box-3, .theme-box-4, .theme-box-5 {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1100;
+  width: 30px;
+  height: 26px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hamburger div {
+  height: 4px;
+  background-color: #000;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.hamburger.open div:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.open div:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open div:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  body {
+    flex-direction: column;
+  }
+
+  .case.projet {
+    width: 260px;      /* un peu plus compact */
+    height: 240px;
+  }
+
+  .buttons {
+    flex-direction: row;   /* reste en ligne (contrairement au mobile) */
+    gap: 8px;
+	flex-wrap: wrap;      /* autorise passage à la ligne */
+    justify-content: center;
+  }
+
+  .btn {
+    font-size: 12px;       /* texte plus petit */
+    padding: 6px 10px;     /* boutons moins larges */
+    width: auto;           /* IMPORTANT : évite qu'ils prennent toute la largeur */
+	max-width: 120px;   /* limite la taille */
+	white-space: normal;
+	word-break: break-word;
+	text-align: center;
+  }
+
+  .overlay h3 {
+    font-size: 14px;
+  }
+
+/*   .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 0 50px;
+    flex-wrap: wrap;
+  } */
+
+  /* Hamburger blanc */
+  .hamburger {
+    display: flex;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 1100;
+    width: 30px;
+    height: 26px;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+
+  .hamburger div {
+    height: 4px;
+    background-color: white;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+
+  .hamburger.open div:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .hamburger.open div:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.open div:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  /* Sidebar responsive reprend le style normal */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -260px; /* cachée par défaut */
+    width: 260px;
+    height: 100vh;
+    background-color: #4e7282;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 5px;
+    transition: left 0.3s ease;
+    z-index: 1050;
+  }
+
+  .sidebar.active {
+    left: 0;
+  }
+
+  /* Nom */
+  .sidebar .nom {
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+  }
+
+  /* Boutons CV / PIX empilés et plus petits */
+  .sidebar .CV,
+  .sidebar .pix {
+    display: block;
+    width: 50%;
+    margin: 3px 0;
+    padding: 8px 15px;
+    font-size: 12px;   /* plus petit */
+    color: white;
+    background-color: #000;
+    border: 0.1em solid #fff;
+    border-radius: 50% 20% / 10% 40%;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+
+  .sidebar .CV:hover,
+  .sidebar .pix:hover {
+    background-color: #fff;
+    color: black;
+    border-color: #000;
+  }
+
+  /* Titres a reprennent exactement le style normal overlay */
+  .sidebar .titre {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    text-align: left;
+    transition: background 0.3s, color 0.3s;
+    background-color: transparent; /* comme overlay normal */
+  }
+
+  .sidebar .titre:hover {
+    color: white;
+  }
+
+  /* Contenu principal */
+  .main-content {
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  .container {
+    gap: 40px;               /* un peu moins de marge si l’écran est plus petit */
+    flex-wrap: wrap;         /* autorise le retour à la ligne si besoin */
+    justify-content: center;
+  }
+
+  .container details {
+    flex: 1 1 300px;         /* largeur flexible mais raisonnable */
+    max-width: 380px;
+  }
+
+/*   .sidebar .nom {
+    margin-top: 0;
+    font-size: 22px;
+    margin-right: 20px;
+  }
+
+  .sidebar .CV {
+    margin-left: 0;
+    margin-right: 20px;
+  }
+
+  .sidebar .titre {
+    font-size: 18px;
+    padding: 0 10px;
+  }
+
+  .main-content {
+    margin-left: 0;
+    margin-top: 60px;
+  } */
+
+  .bienvenue {
+    margin-left: 0;
+    text-align: center;
+    font-size: 2.2em;
+	width: 100%;
+  }
+
+  .organigramme img {
+    width: 70%;
+  }
+
+  .logo {
+    gap: 30px;
+  }
+
+  .logo img {
+    height: 60px;
+  }
+  
+  .cases-container {
+    gap: 25px;             /* un peu moins d'espace */
+  }
+
+  .case {
+    width: 200%;
+    max-width: 180px;
+  }
+}
+
+@media (max-width: 700px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .case.projet {
+    width: 90%;        /* prend presque tout l'écran */
+    max-width: 350px;
+    height: 280px;     /* + grand pour respirer */
+  }
+
+  .overlay h3 {
+    font-size: 15px;
+  }
+
+  .buttons {
+    flex-direction: column; /* boutons empilés */
+    width: 100%;
+    gap: 10px;
+  }
+
+  .btn {
+    width: 80%;       /* boutons larges */
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+  }
+
+
+/*   .sidebar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 15px;
+    height: auto;
+    width: 220px;
+    left: -230px;
+    top: 0;
+    bottom: auto;
+    transition: left 0.3s ease;
+  } */
+  
+  .sidebar {
+    display: flex;
+    flex-wrap: wrap;        /* autorise plusieurs lignes */
+    align-items: center;
+    justify-content: center; /* centre le contenu horizontalement */
+    padding: 10px 15px;
+    height: auto;
+    width: 100%;            /* sidebar en haut prend toute la largeur */
+    left: 0;
+    top: 0;
+    background-color: #4e7282;
+  }
+
+  /* Première ligne : nom + boutons */
+  .sidebar .nom,
+  .sidebar .CV,
+  .sidebar .pix {
+    flex: 0 1 auto;         /* largeur automatique selon contenu */
+    text-align: center;
+    font-size: 14px;        /* réduit la taille du texte */
+    margin: 5px 8px;        /* espace entre éléments */
+  }
+
+  /* Deuxième ligne : titres/menus */
+  .sidebar .titre {
+    flex: 1 1 100%;         /* force nouvelle ligne */
+    text-align: center;
+    font-size: 12px;        /* texte plus petit */
+    margin: 3px 0;          /* espacement vertical réduit */
+    padding: 4px 8px;
+  }
+
+.logo {
+    gap: 20px;       /* espace réduit entre les logos */
+    flex-wrap: wrap; /* pour qu'ils passent à la ligne si besoin */
+    justify-content: center;
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+
+  .sidebar.active {
+    left: 0;
+  }
+
+  .sidebar .nom {
+    margin-bottom: 10px;
+  }
+
+  .sidebar .CV {
+    margin-bottom: 10px;
+  }
+
+  .sidebar .titre {
+    padding: 8px 0;
+  }
+
+  .main-content {
+    margin-left: 0;
+    text-align: center;
+    width: 100%;
+    font-size: 2em;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+	margin: 30px auto 0;
+    padding: 0 10px;
+  }
+
+  .container details {
+    width: 100%;              /* prend la largeur du mobile, avec marges */
+    max-width: 320px;
+  }
+  
+  .cases-container {
+    flex-direction: column; /* empile verticalement */
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .case {
+    width: 90%;            /* largeur fluide */
+    max-width: 300px;      /* limite la taille max */
+    min-width: 250px;      /* garde une taille décente */
+    height: 140px;         /* légèrement plus petit */
+  }
+
+  .organigramme img {
+    width: 95%;
+  }
+}
