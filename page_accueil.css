@@ -719,14 +719,117 @@ img {
 }
 
 @media (max-width: 700px) {
-  .hamburger {
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 24px;
+  cursor: pointer;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 3000; /* au-dessus de la sidebar */
+}
+
+.hamburger div {
+  height: 4px;
+  background-color: white; /* barres blanches */
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* TRANSFORMATION EN CROIX */
+.hamburger.open div:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.open div:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open div:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* ASSUREZ-VOUS QUE LES BARRES SONT TOUJOURS AU-DESSUS */
+.hamburger div {
+  position: relative;
+  z-index: 3100;
+}
+
+  /* SIDEBAR VERSION HAMBURGER */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -260px;        /* 👈 cachée */
+    width: 260px;
+    height: 100vh;
+    background-color: #4e7282;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 10px;
+    transition: left 0.3s ease;
+    z-index: 1500;
   }
 
+  .sidebar.active {
+    left: 0;            /* 👈 visible */
+  }
+
+  /* NOM */
+  .sidebar .nom {
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  /* BOUTONS (PLUS PETITS) */
+  .sidebar .CV,
+  .sidebar .pix {
+    font-size: 12px;
+    padding: 6px 12px;
+    margin: 5px 0;
+  }
+
+  /* TITRES (LIENS) */
+  .sidebar .titre {
+    font-size: 13px;
+    padding: 8px 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  /* HOVER IDENTIQUE (pas de fond bleu) */
+  .sidebar .titre:hover {
+    background: none;
+    color: white;
+  }
+
+  /* CONTENU */
+  .main-content {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* LOGOS */
+  .logo {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .logo img {
+    height: 50px;
+  }
+
+  /* PROJETS */
   .case.projet {
-    width: 90%;        /* prend presque tout l'écran */
+    width: 90%;
     max-width: 350px;
-    height: 280px;     /* + grand pour respirer */
+    height: 280px;
   }
 
   .overlay h3 {
@@ -734,124 +837,48 @@ img {
   }
 
   .buttons {
-    flex-direction: column; /* boutons empilés */
+    flex-direction: column;
     width: 100%;
     gap: 10px;
   }
 
   .btn {
-    width: 80%;       /* boutons larges */
+    width: 80%;
     text-align: center;
     font-size: 15px;
     padding: 10px;
   }
 
-
-/*   .sidebar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px 15px;
-    height: auto;
-    width: 220px;
-    left: -230px;
-    top: 0;
-    bottom: auto;
-    transition: left 0.3s ease;
-  } */
-  
-  .sidebar {
-    display: flex;
-    flex-wrap: wrap;        /* autorise plusieurs lignes */
-    align-items: center;
-    justify-content: center; /* centre le contenu horizontalement */
-    padding: 10px 15px;
-    height: auto;
-    width: 100%;            /* sidebar en haut prend toute la largeur */
-    left: 0;
-    top: 0;
-    background-color: #4e7282;
-  }
-
-  /* Première ligne : nom + boutons */
-  .sidebar .nom,
-  .sidebar .CV,
-  .sidebar .pix {
-    flex: 0 1 auto;         /* largeur automatique selon contenu */
-    text-align: center;
-    font-size: 14px;        /* réduit la taille du texte */
-    margin: 5px 8px;        /* espace entre éléments */
-  }
-
-  /* Deuxième ligne : titres/menus */
-  .sidebar .titre {
-    flex: 1 1 100%;         /* force nouvelle ligne */
-    text-align: center;
-    font-size: 12px;        /* texte plus petit */
-    margin: 3px 0;          /* espacement vertical réduit */
-    padding: 4px 8px;
-  }
-
-.logo {
-    gap: 20px;       /* espace réduit entre les logos */
-    flex-wrap: wrap; /* pour qu'ils passent à la ligne si besoin */
-    justify-content: center;
-  }
-  
-  .logo img {
-    height: 50px;
-  }
-
-  .sidebar.active {
-    left: 0;
-  }
-
-  .sidebar .nom {
-    margin-bottom: 10px;
-  }
-
-  .sidebar .CV {
-    margin-bottom: 10px;
-  }
-
-  .sidebar .titre {
-    padding: 8px 0;
-  }
-
-  .main-content {
-    margin-left: 0;
-    text-align: center;
-    width: 100%;
-    font-size: 2em;
-  }
-
-  .container {
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-	margin: 30px auto 0;
-    padding: 0 10px;
-  }
-
-  .container details {
-    width: 100%;              /* prend la largeur du mobile, avec marges */
-    max-width: 320px;
-  }
-  
+  /* CASES */
   .cases-container {
-    flex-direction: column; /* empile verticalement */
+    flex-direction: column;
     align-items: center;
     gap: 20px;
     padding: 20px;
   }
 
   .case {
-    width: 90%;            /* largeur fluide */
-    max-width: 300px;      /* limite la taille max */
-    min-width: 250px;      /* garde une taille décente */
-    height: 140px;         /* légèrement plus petit */
+    width: 90%;
+    max-width: 300px;
+    min-width: 250px;
+    height: 140px;
   }
 
   .organigramme img {
     width: 95%;
+  }
+
+  /* DETAILS */
+  .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin: 30px auto 0;
+    padding: 0 10px;
+  }
+
+  .container details {
+    width: 100%;
+    max-width: 320px;
   }
 }
