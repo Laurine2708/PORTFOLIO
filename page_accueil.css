@@ -52,6 +52,18 @@ p {
   transform: translateY(0);
 }
 
+.tableau {
+  display: block;           /* fait du lien un bloc */
+  text-align: center;       /* centre l’image à l’intérieur */
+}
+
+.tableau img {
+  display: inline-block;    /* ou block si tu veux */
+  width: 80%;               /* taille de l’image */
+  max-width: 900px;         /* ajuste la taille maximale */
+  height: auto;             /* garde les proportions */
+}
+
 /* Articles veille */
 .article-container {
   display: flex;
@@ -469,6 +481,7 @@ img {
   animation: fadeInUp 0.6s ease-out forwards;
 }
 
+
 /* Hamburger */
 .hamburger {
   display: none;
@@ -699,6 +712,10 @@ img {
   .organigramme img {
     width: 70%;
   }
+  
+    .synthese img {
+    width: 70%;
+  }
 
   .logo {
     gap: 30px;
@@ -865,6 +882,10 @@ img {
   }
 
   .organigramme img {
+    width: 95%;
+  }
+  
+  .synthese img {
     width: 95%;
   }
 

@@ -161,11 +161,6 @@
 		<p class="fade-in">Dans un deuxième temps, j'ai participé à la mise en place d'un planning de tâches et d'évènements pour les agents du CICOA de mon secteur. Ce planning a pour but de gérer les
 		tâches prévues pour les agents du secteur Production, comme les mises en production, ainsi que leur congés ou arrêts maladies.</p>
 		<br>
-		<p class="fade-in">Dans le cadre de mes cours de BTS, j'ai eu l'occasion de travailler sur un projet qui a fait appel au framework Symfony, ainsi que de travailler avec le langage
-		Java. J'ai aussi développé, dans le cadre d'un projet en cours de formation, une application téléphone avec Flutter, en dart.</p>
-		<br>
-		
-		<!-- Rajouter les logos de flutter / java --!>
 		
 		<div class="logo fade-in">
 			<img src="html5_bis.png" alt="Logo HTML 5"><img src="css3_bis.png" alt="Logo CSS 3"><img src="php.png" alt="Logo PHP"><img src="java.png" alt="Logo Java">
@@ -200,7 +195,6 @@
 				<a class="doc" href="suppression_image.pdf" target="blank"><div class="case">Suppression d'image sur les fiches incidents et sur le serveur</div></a>
 				<a class="doc" href="brouillon.pdf" target="blank"><div class="case">Système de brouillon pour les profils non valideurs</div></a>
 				<a class="doc" href="màj_mdp.pdf" target="blank"><div class="case">Système de mise à jour des mots de passe des utilisateurs</div></a>
-				<!--<a class="doc" href="Connexion_planning_sso.pdf" target="blank"><div class="case">Connexion au planning via SSO</div></a>-->
 				<a class="doc" href="Optimisation_formulaire.pdf" target="blank"><div class="case">Optimisation du formulaire d'ajout d'évènements au planning</div></a>
 				<a class="doc" href="interpretation_balises.pdf" target="blank"><div class="case">Interprétation des balises html sans les balises XML</div></a>
 				<a class="doc" href="Mise_en_place_de_logs.pdf" target="blank"><div class="case">Mise en place d'un journal de log</div></a>
@@ -213,6 +207,7 @@
 			<br>
 			<!--Voir pour le mettre en javascript sur une fenêtre pop up pour les documents pdf--!>
 			<div class="cases-container fade-in">
+			
 				<!-- PROJET SYMFONY -->
 				<div class="case projet" style="background-image: url('symfony.png');">
 					<div class="overlay">
@@ -238,7 +233,11 @@
 				</div>
 			</div>
 		</div>
+		<br><br>
 		
+		<h3 class = "fade-in">Mon tableau de compétences</h3>
+		<br>
+		<a class="tableau fade-in" href = "BTS_SIO_tableau_de_synthese_2026.png" target="blank"><img src="BTS_SIO_tableau_de_synthese_2026.png" alt = "Tableau de synthèse" class = "synthese"></a>
 		
 	</div>
 	<!--===============================================================================--!>
@@ -251,7 +250,7 @@
 		(outils, langages, frameworks, méthodes) afin de rester informé, d’anticiper les changements et d’améliorer ses compétences professionnelles.</p>
 		<br><br>
 		<h2 class="fade-in">Le principal outil de ma veille technologique</h2>
-		<p class="fade-in">Pour effectuer ma veille, j'ai principalement utilisé un agrégateur de flux RSS nommé Feedly.</p>
+		<p class="fade-in">Pour effectuer ma veille, j'ai utilisé un agrégateur de flux RSS nommé Feedly ainsi que mes propres recherches sur internet.</p>
 		<br><br>
 		<h2 class="fade-in">Le sujet de ma veille</h2>
 		<p class="fade-in">Pour ma veille, j'ai décidé de traiter le sujet de l'IA dans le développement par le biais de cette thématique :
