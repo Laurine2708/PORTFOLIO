@@ -80,6 +80,9 @@ p {
   padding: 15px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   transition: transform 0.2s, box-shadow 0.2s;
+
+  display: flex;              /* <-- ajouté */
+  flex-direction: column;     /* organise le contenu verticalement */
 }
 
 .article-block:hover {
@@ -106,6 +109,8 @@ p {
   font-weight: bold;
   cursor: pointer;
   transition: color 0.2s;
+
+  margin-top: auto; /* <-- pousse le lien en bas du bloc */
 }
 
 .article-block a:hover {

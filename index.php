@@ -261,8 +261,6 @@
 		
 		<h3 class="fade-in">Thème 1 : L'IA comme assistant au développement</h3>
 		<!--
-			Voir pour mettre une màj auto des liens
-			
 			1) Génération de code (ChatGPT, GitHub Copilot)
 			2) Aide au débogage et à la correction d’erreurs
 			3) Complétion automatique et gain de productivité
@@ -270,19 +268,24 @@
 		<br>
 		<div class="article-container fade-in">
 			<div class="article-block fade-in">
-				<strong>De l’assistance par IA au pilotage de l’IA</strong>
-				<p>Comment les outils IA assistent les développeurs, automatisent le code répétitif et augmentent la productivité.</p>
-				<a href="https://blog.ippon.fr/2025/02/28/de-lassistance-par-ia-au-pilotage-de-lia-lemergence-des-coding-agents-2" target="_blank">Lire l'article</a>
+				<strong>Google : l’IA change le rôle des développeurs</strong>
+				<p><em>Source :</em> Business Insider</p>
+				<p>Chez Google, l’IA écrit une grande partie du code et les développeurs se concentrent davantage sur l’architecture, le jugement et la conception plutôt que sur le codage manuel.</p>
+				<a href="https://www.businessinsider.com/ai-coding-changing-software-developer-role-2026-3" target="_blank">Lire l'article</a>
 			</div>
+
 			<div class="article-block fade-in">
-				<strong>Quand l’IA code : adoption et impact</strong>
-				<p>Analyse des usages des outils IA et de leur impact sur les workflows des développeurs.</p>
-				<a href="https://www.gaudeztechlab.com/ressources/coding-with-ai-in-2025" target="_blank">Lire l'article</a>
+				<strong>Uber CTO : intégration massive de l’IA dans le développement</strong>
+				<p><em>Source :</em> Business Insider via Reuters / Times of India</p>
+				<p>Uber déclare que 95 % des ingénieurs utilisent des outils IA et que cela change radicalement la manière de développer, avec plus de revue et supervision que de code manuel.</p>
+				<a href="https://www.businessinsider.com/uber-cto-ai-coding-agentic-software-engineers-2026-3" target="_blank">Lire l'article</a>
 			</div>
+
 			<div class="article-block fade-in">
-				<strong>Le développeur devient orchestrateur</strong>
-				<p>Focus sur la transition du rôle du développeur face aux agents IA autonomes.</p>
-				<a href="https://www.ia-info.fr/agents-codeurs-et-intelligence-artificielle-la-revolution-qui-redefini-le-metier-de-developpeur.html" target="_blank">Lire l'article</a>
+				<strong>OpenAI Codex</strong>
+				<p><em>Source :</em> Wikipédia</p>
+				<p>Présentation de Codex, outil d’IA de génération de code d’OpenAI, adopté par des millions de développeurs et intégré dans de nombreux workflows pour assister le développement.</p>
+				<a href="https://en.wikipedia.org/wiki/OpenAI_Codex_%28AI_agent%29" target="_blank">Lire l'article</a>
 			</div>
 		</div>
 		
@@ -297,18 +300,21 @@
 		<div class="article-container fade-in">
 			<div class="article-block fade-in">
 				<strong>Supervision et rôle humain</strong>
-				<p>Réflexion sur la supervision nécessaire, le rôle humain et les erreurs fréquentes de l’IA.</p>
+				<p><em>Source :</em> Nicolas Dabene</p>
+				<p>Réflexion approfondie sur la nécessité pour le développeur de superviser l’IA, d’intervenir en cas d’erreurs et de maintenir un rôle actif dans le développement, même lorsque l’IA automatise certaines tâches.</p>
 				<a href="https://nicolas-dabene.fr/articles/2025/11/04/ia-supervision-developpement" target="_blank">Lire l'article</a>
 			</div>
 			<div class="article-block fade-in">
 				<strong>Évolution ou perte de compétences ?</strong>
-				<p>Étude sur l’impact de l’IA sur les compétences fondamentales des développeurs.</p>
+				<p><em>Source :</em> IJMCR</p>
+				<p>Étude sur l’impact de l’IA sur les compétences fondamentales des développeurs, en analysant les domaines où les connaissances traditionnelles peuvent s’éroder et celles qui deviennent plus stratégiques.</p>
 				<a href="https://ijmcr.everant.org/index.php/ijmcr/article/view/1070" target="_blank">Lire l'article</a>
 			</div>
 			<div class="article-block fade-in">
-				<strong>Le rôle du développeur face aux agents IA</strong>
-				<p>Comment le développeur devient analyste et superviseur plutôt qu’un simple écrivain de code.</p>
-				<a href="https://codeai.fr/agent-ia-autonome-fin-developpeur" target="_blank">Lire l'article</a>
+				<strong>Google : l’IA change le rôle des développeurs</strong>
+				<p><em>Source :</em> Business Insider</p>
+				<p>Les développeurs passent moins de temps à coder et davantage à superviser l’IA, prendre des décisions d’architecture et gérer les choix stratégiques du développement.</p>
+				<a href="https://www.businessinsider.com/ai-coding-changing-software-developer-role-2026-3" target="_blank">Lire l'article</a>
 			</div>
 		</div>
 		
@@ -323,19 +329,22 @@
 		<br>
 		<div class="article-container fade-in">
 			<div class="article-block fade-in">
-				<strong>Développement assisté par IA : méthodes, risques, limites</strong>
-				<p>Analyse des principaux risques : dépendance, perte de compétences, dette technique.</p>
-				<a href="https://cto-externe.fr/actualites-conseil/developpement-assiste-ia" target="_blank">Lire l'article</a>
+				<strong>IA amplifie le problème de burnout</strong>
+				<p><em>Source :</em> ITpro.com</p>
+				<p>Les outils de codage IA augmentent la productivité, mais aussi les erreurs, le travail hors heures et la charge des développeurs, illustrant les limites et risques d’une adoption trop rapide.</p>
+				<a href="https://www.itpro.com/software/development/ai-doesnt-solve-the-burnout-problem-if-anything-it-amplifies-it-ai-coding-tools-might-supercharge-software-development-but-working-at-machine-speed-has-a-big-impact-on-developers" target="_blank">Lire l'article</a>
 			</div>
 			<div class="article-block fade-in">
-				<strong>IA et sécurité applicative</strong>
-				<p>Examen des risques pour la sécurité du code généré par les assistants IA.</p>
-				<a href="https://www.journaldunet.com/intelligence-artificielle/1524177-les-assistants-de-code-ia-representent-ils-une-menace-pour-la-securite-applicative" target="_blank">Lire l'article</a>
+				<strong>L’IA provoque des licenciements dans la tech</strong>
+				<p><em>Source :</em> BFMTV</p>
+				<p>L’article met en lumière comment l’introduction de l’IA dans le secteur tech entraîne des licenciements parmi les développeurs et autres professionnels de l’informatique, soulevant des questions sur l’avenir du travail et la protection des compétences.</p>
+				<a href="https://www.bfmtv.com/tech/intelligence-artificielle/l-ia-provoque-de-plus-en-plus-de-licenciements-dans-la-tech-mais-sam-altman-co-fondateur-d-open-ai-remercie-maladroitement-les-programmeurs-de-nous-avoir-amenes-aussi-loin_AV-202603180744.html" target="_blank">Lire l'article</a>
 			</div>
 			<div class="article-block fade-in">
-				<strong>Limites et risques de l’IA</strong>
-				<p>Discussion sur les limites de l’IA à comprendre le contexte métier et réglementaire.</p>
-				<a href="https://cto-externe.fr/actualites-developpement/ia-developpement-web" target="_blank">Lire l'article</a>
+				<strong>Baisse des emplois informatiques en France malgré la hausse de la production</strong>
+				<p><em>Source :</em> BFMTV</p>
+				<p>En France, le nombre d’emplois dans l’informatique diminue pour la première fois après 20 ans de croissance, alors que la productivité continue d’augmenter, illustrant l’impact probable de l’automatisation et de l’IA sur le marché du travail.</p>
+				<a href="https://www.bfmtv.com/economie/emploi/un-retournement-brutal-apres-20-ans-de-hausse-le-nombre-d-emplois-dans-l-informatique-baisse-en-france-alors-la-production-augmente-c-est-probablement-l-ia-qui-est-a-l-uvre_AV-202603240695.html" target="_blank">Lire l'article</a>
 			</div>
 		</div>
 		
