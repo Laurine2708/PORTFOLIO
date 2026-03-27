@@ -356,7 +356,7 @@ footer {
   text-align: center;
   font-size: 10px;
   padding: 30px;
-  background-color: #78ACEB;
+  background-color: #9FA5BD;
 }
 
 /* IMAGES - TAILLES RAISONNABLES */
@@ -389,7 +389,7 @@ img {
 .sidebar {
   width: 205px;
   font-size: 25px;
-  background-color: #78ACEB;
+  background-color: #9FA5BD;
   color: black;
   height: 100vh;
   position: fixed;
@@ -606,7 +606,7 @@ img {
     left: -260px; /* cachée par défaut */
     width: 260px;
     height: 100vh;
-    background-color: #78ACEB;
+    background-color: #9FA5BD;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -787,7 +787,7 @@ img {
     left: -260px;        /* 👈 cachée */
     width: 260px;
     height: 100vh;
-    background-color: #78ACEB;
+    background-color: #9FA5BD;
     display: flex;
     flex-direction: column;
     align-items: center;
