@@ -329,10 +329,10 @@
 		<br>
 		<div class="article-container fade-in">
 			<div class="article-block fade-in">
-				<strong>IA amplifie le problème de burnout</strong>
-				<p><em>Source :</em> ITpro.com</p>
-				<p>Les outils de codage IA augmentent la productivité, mais aussi les erreurs, le travail hors heures et la charge des développeurs, illustrant les limites et risques d’une adoption trop rapide.</p>
-				<a href="https://www.itpro.com/software/development/ai-doesnt-solve-the-burnout-problem-if-anything-it-amplifies-it-ai-coding-tools-might-supercharge-software-development-but-working-at-machine-speed-has-a-big-impact-on-developers" target="_blank">Lire l'article</a>
+				<strong>Les jeunes développeurs, premières victimes de l’essor de l’IA</strong>
+				<p><em>Source :</em> Les Échos</p>
+				<p>L’article explique que les développeurs juniors sont les plus touchés par l’automatisation liée à l’IA, car leurs tâches sont plus facilement remplacées, ce qui accentue les inégalités sur le marché du travail.</p>
+				<a href="https://www.lesechos.fr/economie-france/social/les-jeunes-developpeurs-informatiques-premieres-victimes-de-lessor-de-lia-2222827" target="_blank">Lire l'article</a>
 			</div>
 			<div class="article-block fade-in">
 				<strong>L’IA provoque des licenciements dans la tech</strong>
