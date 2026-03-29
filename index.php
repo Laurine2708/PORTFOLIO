@@ -116,7 +116,7 @@
 	</div>
 	<!--===============================================================================--!>
 	<div id="Entreprise" class="theme-box-2 fade-in">
-		<h1 class="fade-in">Mon entreprise d'accueil&nbsp; &#128188;</h1>
+		<h1 class="fade-in">Mon entreprise d'accueil</h1>
 		<br><br>
 		<p class="fade-in">J'ai effectué mon alternance au CICOA (Centre Informatique Centre Ouest Atlantique), sur le site de Limoges, situé 2 rue des Sabines, 87073 Limoges Cedex.
 		Il gère les pôles production, supervision opérationnelle, l'administration et les supports. Le siège social est basé sur Tours, situé 1 rue Marcel Tribut, 37042 Tours Cedex.
@@ -152,7 +152,7 @@
 	</div>
 	<!--===============================================================================--!>
 	<div id="Missions" class="theme-box-3 fade-in">
-		<h1 class="fade-in">Mes missions&nbsp; &#128295;</h1>
+		<h1 class="fade-in">Mes missions</h1>
 		<br><br>
 		<p class="fade-in">Dans le cadre de mon alternance, j'ai eu l'occasion de reprendre un projet de site interne, appelé "Intraincident" qui a pour but de lister la documentation
 		permettant de résoudre les problèmes survenant sur les différents serveurs. J'ai dû, entres autres, mettre en place une pagination, faire une barre de recherche par
@@ -275,10 +275,10 @@
 			</div>
 
 			<div class="article-block fade-in">
-				<strong>Uber CTO : intégration massive de l’IA dans le développement</strong>
-				<p><em>Source :</em> Business Insider via Reuters / Times of India</p>
-				<p>Uber déclare que 95 % des ingénieurs utilisent des outils IA et que cela change radicalement la manière de développer, avec plus de revue et supervision que de code manuel.</p>
-				<a href="https://www.businessinsider.com/uber-cto-ai-coding-agentic-software-engineers-2026-3" target="_blank">Lire l'article</a>
+				<strong>Comment construire des agents IA avec Google Cloud</strong>
+				<p><em>Source :</em> Google Cloud</p>
+				<p>Google explique comment créer des agents IA capables d’interagir avec des outils, des bases de données et des services cloud. Ces agents automatisent des tâches complexes et assistent les développeurs dans la production de code et l’analyse.</p>
+				<a href="https://cloud.google.com/blog/products/ai-machine-learning/how-to-build-ai-agents-with-google-managed-mcp-servers/?hl=en" target="_blank">Lire l'article</a>
 			</div>
 
 			<div class="article-block fade-in">
@@ -367,6 +367,7 @@
 </footer>
 </div>
 
+<!-- Script fade-in -->
 <script>
 	document.addEventListener("DOMContentLoaded", function() {
 	// Tous les éléments à faire apparaître
@@ -385,6 +386,7 @@
 	});
 </script>
 
+<!-- Script animation hamburger -->
 <script>
 const hamburger = document.querySelector('.hamburger');
 const sidebar = document.querySelector('.sidebar');
@@ -395,7 +397,7 @@ hamburger.addEventListener('click', () => {
 });
 </script>
 
-
+<!-- Script affichage des documentations projets entreprise / formation -->
 <script>
 const select = document.getElementById("choixActivite");
 const blocEntreprise = document.getElementById("bloc-entreprise");
@@ -415,6 +417,7 @@ select.addEventListener("change", function() {
 });
 </script>
 
+<!-- Script animation ouverture de la sidebar hamburger -->
 <script>
 const hamburger = document.querySelector('.hamburger');
 const sidebar = document.querySelector('.sidebar');
