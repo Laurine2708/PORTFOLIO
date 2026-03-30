@@ -299,16 +299,16 @@
 		<br>
 		<div class="article-container fade-in">
 			<div class="article-block fade-in">
-				<strong>Supervision et rôle humain</strong>
-				<p><em>Source :</em> Nicolas Dabene</p>
-				<p>Réflexion approfondie sur la nécessité pour le développeur de superviser l’IA, d’intervenir en cas d’erreurs et de maintenir un rôle actif dans le développement, même lorsque l’IA automatise certaines tâches.</p>
-				<a href="https://nicolas-dabene.fr/articles/2025/11/04/ia-supervision-developpement" target="_blank">Lire l'article</a>
+				<strong>Les étudiants de Berkeley utilisent l’IA comme partenaire d’apprentissage</strong>
+				<p><em>Source :</em> Google Cloud</p>
+				<p>L’article montre comment les étudiants utilisent l’IA pour apprendre : poser des questions, comprendre des concepts et corriger leurs erreurs. Ils développent des compétences essentielles comme le prompt engineering, l’analyse critique et la supervision des réponses générées par l’IA.</p>
+				<a href="https://cloud.google.com/blog/topics/developers-practitioners/how-uc-berkeley-students-use-ai-as-a-learning-partner/?hl=en" target="_blank">Lire l'article</a>
 			</div>
 			<div class="article-block fade-in">
-				<strong>Évolution ou perte de compétences ?</strong>
-				<p><em>Source :</em> IJMCR</p>
-				<p>Étude sur l’impact de l’IA sur les compétences fondamentales des développeurs, en analysant les domaines où les connaissances traditionnelles peuvent s’éroder et celles qui deviennent plus stratégiques.</p>
-				<a href="https://ijmcr.everant.org/index.php/ijmcr/article/view/1070" target="_blank">Lire l'article</a>
+				<strong>L’avenir est déjà là et il est agentique</strong>
+				<p><em>Source :</em> ActuIA</p>
+				<p>L’article décrit l’émergence des IA agentiques, capables d’agir de manière autonome et de prendre des décisions. Ces systèmes transforment profondément le rôle du développeur, qui doit désormais superviser et orchestrer des agents intelligents plutôt que simplement écrire du code.</p>
+				<a href="https://www.actuia.com/contribution/sergio-gago/lavenir-est-deja-la-et-il-est-agentique/" target="_blank">Lire l'article</a>
 			</div>
 			<div class="article-block fade-in">
 				<strong>Google : l’IA change le rôle des développeurs</strong>
@@ -341,10 +341,10 @@
 				<a href="https://www.bfmtv.com/tech/intelligence-artificielle/l-ia-provoque-de-plus-en-plus-de-licenciements-dans-la-tech-mais-sam-altman-co-fondateur-d-open-ai-remercie-maladroitement-les-programmeurs-de-nous-avoir-amenes-aussi-loin_AV-202603180744.html" target="_blank">Lire l'article</a>
 			</div>
 			<div class="article-block fade-in">
-				<strong>Baisse des emplois informatiques en France malgré la hausse de la production</strong>
-				<p><em>Source :</em> BFMTV</p>
-				<p>En France, le nombre d’emplois dans l’informatique diminue pour la première fois après 20 ans de croissance, alors que la productivité continue d’augmenter, illustrant l’impact probable de l’automatisation et de l’IA sur le marché du travail.</p>
-				<a href="https://www.bfmtv.com/economie/emploi/un-retournement-brutal-apres-20-ans-de-hausse-le-nombre-d-emplois-dans-l-informatique-baisse-en-france-alors-la-production-augmente-c-est-probablement-l-ia-qui-est-a-l-uvre_AV-202603240695.html" target="_blank">Lire l'article</a>
+				<strong>Mise à jour de la politique d’utilisation des données de GitHub Copilot</strong>
+				<p><em>Source :</em> GitHub</p>
+				<p>GitHub annonce utiliser les interactions des développeurs avec Copilot (prompts, code généré, feedback) pour entraîner ses modèles d’IA. Cette pratique soulève des enjeux de confidentialité et de protection des données, notamment pour le code sensible.</p>
+				<a href="https://github.blog/news-insights/company-news/updates-to-github-copilot-interaction-data-usage-policy/" target="_blank">Lire l'article</a>
 			</div>
 		</div>
 		
