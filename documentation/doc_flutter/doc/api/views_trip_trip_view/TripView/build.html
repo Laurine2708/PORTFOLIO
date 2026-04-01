@@ -68,7 +68,13 @@
     </section>
     
 <section class="desc markdown">
-  <p>Nom de la route pour la navigation.</p>
+  <p>Construit l’interface utilisateur de la page TripView.</p>
+<p>Cette méthode assemble :
+— la bannière de la ville via <a href="../../views_trip_widgets_trip_city_bar/TripCityBar-class.html">TripCityBar</a>,
+— le widget météo via <a href="../../views_trip_widgets_trip_weather/TripWeather-class.html">TripWeather</a>,
+— la liste des activités via <a href="../../views_trip_widgets_trip_activities/TripActivities-class.html">TripActivities</a>.</p>
+<p>Elle récupère également les arguments passés à la page (nom de la ville et ID du voyage)
+et utilise le <a href="../../providers_city_provider/CityProvider-class.html">CityProvider</a> pour récupérer les informations de la ville.</p>
 </section>
 
 
