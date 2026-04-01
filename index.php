@@ -313,7 +313,7 @@
 			<div class="article-block fade-in">
 				<strong>L’IA au service de la transformation numérique des entreprises</strong>
 				<p><em>Source :</em> ActuIA</p>
-				<p>L’article montre comment l’intelligence artificielle devient un levier central de transformation numérique dans les entreprises. Elle permet d’optimiser les प्रक्रesses, d’améliorer la productivité et oblige les professionnels à adapter leurs compétences.</p>
+				<p>L’article montre comment l’intelligence artificielle devient un levier central de transformation numérique dans les entreprises. Elle permet d’optimiser les processus, d’améliorer la productivité et oblige les professionnels à adapter leurs compétences.</p>
 				<a href="https://www.actuia.com/actualite/lia-au-service-de-la-transformation-numerique-des-entreprises-luxembourgeoises/" target="_blank">Lire l'article</a>
 			</div>
 		</div>
