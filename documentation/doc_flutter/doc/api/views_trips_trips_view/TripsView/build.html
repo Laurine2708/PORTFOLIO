@@ -100,6 +100,7 @@ Widget build(BuildContext context) {
       drawer: const DymaDrawer(),
 
       &#47;&#47;&#47; Corps de la page.
+      &#47;&#47;&#47; Les données sont-elles en train de charger ?
       body: tripProvider.isLoading != true
           &#47;&#47;&#47; Si les données sont chargées
           ? tripProvider.trips.length &gt; 0
