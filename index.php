@@ -268,10 +268,10 @@
 		<br>
 		<div class="article-container fade-in">
 			<div class="article-block fade-in">
-				<strong>Google : l’IA change le rôle des développeurs</strong>
-				<p><em>Source :</em> Business Insider</p>
-				<p>Chez Google, l’IA écrit une grande partie du code et les développeurs se concentrent davantage sur l’architecture, le jugement et la conception plutôt que sur le codage manuel.</p>
-				<a href="https://www.businessinsider.com/ai-coding-changing-software-developer-role-2026-3" target="_blank">Lire l'article</a>
+				<strong>Le développement piloté par des agents IA avec GitHub Copilot</strong>
+				<p><em>Source :</em> GitHub</p>
+				<p>L’article présente une nouvelle approche appelée “agent-driven development”, où des agents IA sont capables d’automatiser des tâches complètes de développement (analyse, génération de code, tests). Le développeur devient alors un superviseur qui orchestre ces systèmes intelligents.</p>
+				<a href="https://github.blog/ai-and-ml/github-copilot/agent-driven-development-in-copilot-applied-science/" target="_blank">Lire l'article</a>
 			</div>
 
 			<div class="article-block fade-in">
@@ -311,10 +311,10 @@
 				<a href="https://www.actuia.com/contribution/sergio-gago/lavenir-est-deja-la-et-il-est-agentique/" target="_blank">Lire l'article</a>
 			</div>
 			<div class="article-block fade-in">
-				<strong>Google : l’IA change le rôle des développeurs</strong>
-				<p><em>Source :</em> Business Insider</p>
-				<p>Les développeurs passent moins de temps à coder et davantage à superviser l’IA, prendre des décisions d’architecture et gérer les choix stratégiques du développement.</p>
-				<a href="https://www.businessinsider.com/ai-coding-changing-software-developer-role-2026-3" target="_blank">Lire l'article</a>
+				<strong>L’IA au service de la transformation numérique des entreprises</strong>
+				<p><em>Source :</em> ActuIA</p>
+				<p>L’article montre comment l’intelligence artificielle devient un levier central de transformation numérique dans les entreprises. Elle permet d’optimiser les प्रक्रesses, d’améliorer la productivité et oblige les professionnels à adapter leurs compétences.</p>
+				<a href="https://www.actuia.com/actualite/lia-au-service-de-la-transformation-numerique-des-entreprises-luxembourgeoises/" target="_blank">Lire l'article</a>
 			</div>
 		</div>
 		
