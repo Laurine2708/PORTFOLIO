@@ -163,7 +163,7 @@
 		<br>
 		
 		<div class="logo fade-in">
-			<img src="html5_bis.png" alt="Logo HTML 5"><img src="css3_bis.png" alt="Logo CSS 3"><img src="php.png" alt="Logo PHP"><img src="java.png" alt="Logo Java">
+			<img src="html5_bis.png" alt="Logo HTML 5"><img src="css3_bis.png" alt="Logo CSS 3"><img src="php.png" alt="Logo PHP">
 		</div>
 		
 		<br><br>
@@ -171,7 +171,7 @@
 		Java. J'ai aussi développé, dans le cadre d'un projet en cours de formation, une application téléphone avec Flutter, en dart.</p>
 		<br>
 		<div class="logo fade-in">
-			<img src="symfony_framework.png" alt="Logo symfony"><img src="flutter_framework.png" alt="Logo flutter">
+			<img src="symfony_framework.png" alt="Logo symfony"><img src="flutter_framework.png" alt="Logo flutter"><img src="java.png" alt="Logo Java">
 		</div>
 		
 		<br><br>
