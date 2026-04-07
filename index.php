@@ -196,7 +196,7 @@
 				<a class="doc" href="brouillon.pdf" target="blank"><div class="case">Système de brouillon pour les profils non valideurs</div></a>
 				<a class="doc" href="màj_mdp.pdf" target="blank"><div class="case">Système de mise à jour des mots de passe des utilisateurs</div></a>
 				<a class="doc" href="Optimisation_formulaire.pdf" target="blank"><div class="case">Optimisation du formulaire d'ajout d'évènements au planning</div></a>
-				<a class="doc" href="interpretation_balises.pdf" target="blank"><div class="case">Interprétation des balises html sans les balises XML</div></a>
+				<a class="doc" href="interpretations_balises.pdf" target="blank"><div class="case">Interprétation des balises html sans les balises XML</div></a>
 				<a class="doc" href="Mise_en_place_de_logs.pdf" target="blank"><div class="case">Mise en place d'un journal de log</div></a>
 			</div>
 		</div>
